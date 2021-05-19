@@ -50,13 +50,13 @@ body {
     padding-bottom: 20px;
 }
 
-.para1{
+.header .para1{
     color: var(--bright-yellow);
     font-weight: 700;
     margin-bottom: 15px;
 }
 
-.para2{
+.header .para2{
     color: var(--grayish-blue);
     font-weight: 700;
 }
@@ -78,6 +78,7 @@ section {
 .sign-up .para1 {
     color: white;
     font-weight: 700;
+    font-size: 16px;
 }
 
 .sign-up .para2 {
