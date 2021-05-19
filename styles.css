@@ -1,0 +1,158 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    line-height: 1.6;
+    background-color: var(--light-gray);
+} 
+
+.container {
+    width: 50%;
+    margin: auto;
+    border: 0.1px solid var(--light-gray);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    /* border-radius: 5px; */
+    flex-direction: column;
+}
+
+.pd {
+    padding: 50px;
+}
+
+.header {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.header1{
+    color: var(--cyan);
+    padding-bottom: 20px;
+}
+
+.para1{
+    color: var(--bright-yellow);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.para2{
+    color: var(--grayish-blue);
+    font-weight: 700;
+}
+
+section {
+        width: 100%; 
+        color: var(--light-gray);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+}
+
+.sign-up {
+    background-color: var(--cyan);
+    border-bottom-left-radius: 5px;
+    flex-basis: 50%;
+}
+
+.sign-up .para1 {
+    color: white;
+    font-weight: 700;
+}
+
+.sign-up .para2 {
+    color: white;
+    font-size: 35px;
+}
+
+span {
+    color: var(--light-gray);
+    align-self: center;
+    font-size: 15px;
+}
+
+section .sign-up p {
+    font-weight: 700;
+}
+
+.button {
+    background-color: var(--bright-yellow);
+    width: 100%;
+    margin-top: 2em;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.why-us {
+    background-color:  #4abebd;
+    flex-basis: 50%;
+    border-bottom-right-radius: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.why-us p{
+    margin-bottom: 0.9em;
+    font-weight: 700;
+}
+.why-us li {
+    font-size: 14px;
+    color: hsl(179, 62%, 90%);
+    margin-top: 0.2em;
+}
+
+footer .attribution {
+    padding-top: 180px;
+}
+
+@media (max-width: 700px)
+{
+    body {
+        height: auto;
+    }
+
+    .container {
+        width: 90%;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    .sign-up {
+        border-bottom-left-radius: 0px;
+    }
+
+    .why-us {
+        border-bottom-left-radius: 5px;
+    }
+
+}
